@@ -62,6 +62,9 @@ import VCardTemp from './vcard';
 import Version from './version';
 import Visibility from './visibility';
 
+import E2ee from './e2ee';
+import Ediencrypted from './ediencrypted';
+
 
 export default function (JXT) {
 
@@ -128,4 +131,7 @@ export default function (JXT) {
     JXT.use(VCardTemp);
     JXT.use(Version);
     JXT.use(Visibility);
+
+    JXT.use(E2ee);
+    JXT.use(Ediencrypted)
 }
